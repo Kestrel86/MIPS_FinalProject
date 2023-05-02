@@ -100,10 +100,9 @@ outPrintArrayLoop:
 
 .data
 arr: .space 40
-unsortedMessage: .asciiz "Unsorted Arrays: "
-sortedMessage: .asciiz "\nSorted Arrays: "
-arrayOneMessage: .asciiz "\nArray 1: "
-arrayTwoMessage: .asciiz "\nArray 2: "
+unsortedMessage: .asciiz "Unsorted Array: "
+sortedMessage: .asciiz "\nSorted Array: "
+arrayOneMessage: .asciiz "\nArray: "
 arrayOpenBracket: .asciiz "["
 arrayClosedBracket: .asciiz "]"
 arrayCommaSpace: .asciiz ", "
