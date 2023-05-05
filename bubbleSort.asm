@@ -132,8 +132,8 @@ sortedMessage: .asciiz "\nSorted Array: "
 arrayOpenBracket: .asciiz "["
 arrayClosedBracket: .asciiz "]"
 arrayCommaSpace: .asciiz ", "
-enter: .asciiz "Enter 10 integers: "
-option1: .asciiz "\nEnter 1 to sort array(low to high), 2 sort (high to low), or 3 to exit program: "
+enter: .asciiz "Enter 10 integers individually:\n"
+option1: .asciiz "\nPlease enter 1 of 3 choices:\n1) Sort Array (low to high)\n2) Sort Array (high to low)\n3) Exit program\nInput: "
 errorMessage: .asciiz "Please input a number from the given options"
 
 .text
