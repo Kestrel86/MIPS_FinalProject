@@ -1,4 +1,4 @@
-# Ruben Barbero, Youssef Mikhail, Jeffery Rodas, Andrew John Valdez
+# Teamsters: Ruben Barbero, Youssef Mikhail, Jeffery Rodas, Andrew John Valdez 
 # CS 2640.02
 # Final Project: Bubble Sort
 # This program will:
@@ -27,7 +27,8 @@ whichLoop:
 	#deciding which sort to do 
 	beq $t5, 1, loop 
 	beq $t5, 2, loop2
-	
+
+# Andrew V	
 loop: #low to high
 	sll $t7, $s1, 2		#multiply $s1 by 2 and put it in t7
 	add $t7, $s7, $t7 	#add the address of numbers to t7
@@ -140,6 +141,7 @@ errorMessage: .asciiz "Please input a number from the given options"
 main:
 	j Menu
 
+# Youssef
 Menu:
 	menu
 	#getting user input for prompt
