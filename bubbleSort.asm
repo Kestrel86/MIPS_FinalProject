@@ -37,6 +37,7 @@ loop: #low to high
 	lw $t1, 4($t7) 		#load numbers[j+1]
 
 	slt $t2, $t0, $t1	#if t0 < t1
+	beq $t1, $t0, increment  #if the numbers are the same then it will go to increment
 	bne $t2, $zero, increment
 
 	#swap
@@ -53,6 +54,7 @@ loop2: #high to low
 	lw $t1, 4($t7) 		#load numbers[j+1]
 
 	sgt $t2, $t0, $t1	#if t0 > t1
+	beq $t1, $t0, increment  #if the numbers are the same then it will go to increment
 	bne $t2, $zero, increment
 
 	#swap
