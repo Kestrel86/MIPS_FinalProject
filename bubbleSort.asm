@@ -22,7 +22,7 @@
 	#initialize "limit" for loops at $s6.  This limit will be adjusted accordingly, but it should start as arraySize.
 	li $s6, %arraySize
 	j whichLoop
-	
+# Jeffrey R.
 whichLoop:
 	#deciding which sort to do 
 	beq $t5, 1, loop 
@@ -45,7 +45,8 @@ loop: #low to high
 	sw $t0, 4($t7)
 	
 	j loop
-	
+
+# Jeffrey R.	
 loop2: #high to low
 	sll $t7, $s1, 2		#multiply $s1 by 2 and put it in t7
 	add $t7, $s7, $t7 	#add the address of numbers to t7
@@ -148,29 +149,30 @@ Menu:
 	menu
 	#getting user input for prompt
 	li $v0,5
-    	syscall
-    	move $t0, $v0
-    	#comparing user input
-    	beq $t0,3,exit
-    	bgt $t0, 3, error
-    	blt $t0, 0, error
-    	#print message and getting array
-    	printString(enter)
-    	j input
-    	
+    syscall
+    move $t0, $v0
+    #comparing user input
+    beq $t0,3,exit
+    bgt $t0, 3, error
+    blt $t0, 0, error
+    #print message and getting array
+    printString(enter)
+    j input
+  	
 input: 	
 	#getting user input (10 integers)
 	beq $s3,40,oneOrTwo
 	li $v0,5
-    	syscall
-    	sw $v0,arr($s3)
-    	add $s3,$s3,4
+    syscall
+    sw $v0,arr($s3)
+    add $s3,$s3,4
 	j input
-	
+
+# Jeffrey R.	
 oneOrTwo: 
 	#finding which sort it should do
 	beq $t0, 1, lowToHigh
-    	beq $t0, 2, highToLow
+    beq $t0, 2, highToLow
 	
 lowToHigh:
 	# Print the first array (unsorted)
