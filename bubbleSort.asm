@@ -4,7 +4,6 @@
 # This program will:
 # Use the bubble sort algorithm to sort two hard-coded arrays
 # Print both arrays before nad after sorting.
-# reference: https://github.com/acai422/Bubble-Sort/blob/master/BubbleSort.asm
 
 
 # Applies the bubble sort algorithm to the given array with the given array size.
