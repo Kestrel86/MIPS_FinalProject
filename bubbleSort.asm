@@ -7,6 +7,7 @@
 
 
 # Applies the bubble sort algorithm to the given array with the given array size.
+# Refactoring: Ruben B.
 .macro bubbleSort(%arrayLabel, %arraySize)
 	#storing user input to decide which sort to do
 	add $t5, $t5, $t0
@@ -87,6 +88,7 @@ increment:
 .end_macro
 
 # Loops using $t3 as a loop counter, and $t4 as address
+# Ruben B.
 .macro printArray(%arrayLabel, %arraySize)
 	# Initialize loop counter + starting address
 	move $t3, $zero
